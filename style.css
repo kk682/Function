@@ -1,0 +1,38 @@
+body{
+    background-color: honeydew;
+    margin: 2.5cm;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    color: #2e4374;
+}
+
+p{
+    color:	#2e4374;
+}
+
+hr{
+    border-style: dotted;
+    border-color: #ffe4e1;
+    border-width: 5px;
+    height: 20px;
+    width: 100px;
+}
+
+h1{
+    background-color: #e4f1ff;
+    text-align: center;
+    font-family: Brush Script MT, cursive;
+    color: #9400ff;
+    margin-bottom: 0%;
+}
+
+h2 {
+    border: 2px dashed darkblue;
+    box-sizing: border-box;
+    padding: 0.5 rem;
+    font-family: Chalkduster, fantasy;
+    color: indianred;
+}
