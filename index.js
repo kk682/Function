@@ -10,7 +10,7 @@ function reverseString(){
     document.querySelector("#codeResult").innerText = "Reverse My Code: " + reverseString;
     document.querySelector("#codeResult").style.color = "Red";
 }
-console.log(reverseString());
+
 
 //Series of Numbers & Palindrome
 function palindromeYesOrNo(){
@@ -36,4 +36,4 @@ function tip(){
     document.querySelector("#totalAmountResult").innerText = "Total Amount: " + result;
     document.querySelector("#totalAmountResult").style.color = "Red";
 }
-console.log(reverseString());
+
