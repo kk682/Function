@@ -16,8 +16,8 @@ console.log(reverseString());
 function palindromeYesOrNo(){
     let seriesNumbers = document.querySelector("#seriesNumbers").value;
     let x = seriesNumbers.length;
-    for (var i = 0; i < x/2; i++) {
-    if (seriesNumbers.charAt(i)=== seriesNumbers.charAt(x - 1 - i)){
+    for (let i = 0; i < x/2; i++) {
+    if (seriesNumbers.charAt(i) === seriesNumbers.charAt(x - 1 - i)){
         document.querySelector("#seriesNumbersResult").innerText = seriesNumbers + " is palindrome";
     }else {
         document.querySelector("#seriesNumbersResult").innerText = seriesNumbers + " is not palindrome";
@@ -30,8 +30,8 @@ function palindromeYesOrNo(){
 function tip(){
     let subtotal = parseFloat(document.querySelector("#subtotalOfTheBill").value);
     let percentageOfTip = document.querySelector("#tips").value;
-    let tipInDollars = subtotal * (percentageOfTip/100);
-    const result = parseFloat(tipInDollars + subtotal);
+    let amountOfTip = subtotal * (percentageOfTip/100);
+    const result = parseFloat(amountOfTip + subtotal);
     console.log(totalAmountResult);
     document.querySelector("#totalAmountResult").innerText = "Total Amount: " + result;
     document.querySelector("#totalAmountResult").style.color = "Red";
