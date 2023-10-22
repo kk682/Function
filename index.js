@@ -28,11 +28,10 @@ function palindromeYesOrNo(){
 
 //Subtotal of the Bill
 function tip(){
-    let subtotal = document.querySelector("#subtotalOfTheBill").value;
+    let subtotal = parseFloat(document.querySelector("#subtotalOfTheBill").value);
     let percentageOfTip = document.querySelector("#tips").value;
-    let v = percentageOfTip / 100;
-    let tip = subtotal * v;
-    const result = tip + subtotal;
+    let tipInDollars = subtotal * (percentageOfTip/100);
+    const result = parseFloat(tipInDollars + subtotal);
     console.log(totalAmountResult);
     document.querySelector("#totalAmountResult").innerText = "Total Amount: " + result;
     document.querySelector("#totalAmountResult").style.color = "Red";
