@@ -1,51 +1,40 @@
 //String & Reverse
 function reverseString(){
-    let checkingNumbers = document.querySelector("#checkingNumbers").value;
-    console.log(document.querySelector("#checkingNumbers").value);
+    let code = document.querySelector("#code").value;
+    console.log(document.querySelector("#code").value);
     let reverseString ="";
-    for (let i = checkingNumbers.length - 1; i >= 0; i--) {
-        reverseString += checkingNumbers[i];
+    for (let i = code.length - 1; i >= 0; i--) {
+        reverseString += code[i];
     }
     console.log(reverseString);
-    document.querySelector("#checkingNumbersResult").innerText = "Reverse My Checking Numbers:" + reverseString;
+    document.querySelector("#codeResult").innerText = "Reverse My Code: " + reverseString;
+    document.querySelector("#codeResult").style.color = "Red";
 }
 console.log(reverseString());
 
-
 //Series of Numbers & Palindrome
-function palindrome(){
+function palindromeYesOrNo(){
     let seriesNumbers = document.querySelector("#seriesNumbers").value;
-    console.log(document.querySelector("#seriesNumbers").value);
-    let 
+    let x = seriesNumbers.length;
+    for (var i = 0; i < x/2; i++) {
+    if (seriesNumbers.charAt(i)=== seriesNumbers.charAt(x - 1 - i)){
+        document.querySelector("#seriesNumbersResult").innerText = seriesNumbers + " is palindrome";
+    }else {
+        document.querySelector("#seriesNumbersResult").innerText = seriesNumbers + " is not palindrome";
+    }
+    document.querySelector("#seriesNumbersResult").style.color = "Red";
 }
-
-
-
-
-
+}
 
 //Subtotal of the Bill
-function subtotal(){
-    let numbersOfLunchbox = document.querySelector("#numbersOfLunchbox").value;
-    console.log(document.querySelector("#numbersOfLunchbox").value);
-    var subtotal = numbersOfLunchbox * 15;
-    
-    var taxes = Subtotal * 0.0875;
-    var totalAmount = Subtotal + taxes;
-
-    console.log(subtotal);
-    document.querySelector("#numbersOfLunchbox").innerText = "Subtotal: " + subtotal;
-
-console.log(subtotal());
-
-    console.log(taxes);
-document.querySelector("#numbersOfLunchbox").innerText = "Taxes: " + taxes;
-
-    console.log(totalAmount);
-document.querySelector("#numbersOfLunchbox").innerText = "Total Amount: " + totalAmount;
+function tip(){
+    let subtotal = document.querySelector("#subtotalOfTheBill").value;
+    let percentageOfTip = document.querySelector("#tips").value;
+    let v = percentageOfTip / 100;
+    let tip = subtotal * v;
+    const result = tip + subtotal;
+    console.log(totalAmountResult);
+    document.querySelector("#totalAmountResult").innerText = "Total Amount: " + result;
+    document.querySelector("#totalAmountResult").style.color = "Red";
 }
-
-console.log(subtotal());
-console.log(taxes());
-console.log(totalAmount());
-
+console.log(reverseString());

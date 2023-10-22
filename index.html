@@ -9,25 +9,37 @@
 <body>
     <h1>Funtions for User's Behavior</h1>
     <h2>To Enter a String and Display the String in Reverse</h2>
-        <label>Checking Numbers: </label>
-        <input type="text" name="checkingNumbers" id="checkingNumbers">
+    <div class="Reverse">
+        <label>Code: </label>
+        <input type="text" name="code" id="code">
         <button type="button" onclick="reverseString()">Submit</button>
-        <p id="checkingNumbersResult"></p>
-        
-    <h2>To Enter a Series of Numbers and Print If Its a Palindrome or Not</h2>
+        <p id="codeResult"></p>
+    </div>
+
+    <h2>To Enter a Series of Numbers and Print If It Is a Palindrome or Not</h2>
+    <div class="Palindrome">
         <label>Series of Numbers: </label>
         <input type="text" name="seriesNumbers" id="seriesNumbers">
-        <button type="button">Submit</button>
+        <button type="button" onclick="palindromeYesOrNo()">Submit</button>
         <p id="seriesNumbersResult"></p>
-
+    </div>
 
     <h2>What is the Subtotal of the Bill</h2>
-        <label>Numbers of Lunchbox: </label>
-        <input type="number" name="numbersOfLunchbox" id="numbersOfLunchbox">
-        <button type="button" onclick="subtotal()">Submit</button>
-        <p id="subtotalResult"></p>
-        <p id="taxesResult"></p>
+    <div class="Bill">    
+        <label>Subtotal of the Bill</label>
+        <input type="number" name="subtotalOfTheBill" id="subtotalOfTheBill">
+        <br>
+        <label>Tips</label>
+        <select name="tips" id="tips">
+            <option value="0" selected>No Tip</option>
+            <option value="10" selected>10%</option>
+            <option value="15" selected>15%</option>
+            <option value="20" selected>20%</option>
+        </select>
+        <br>
+        <button type="button" onclick="tip()">Submit</button>
         <p id="totalAmountResult"></p>
+    </div>
 
     <script src="index.js" type="text/javascript"></script>
 </body>    
