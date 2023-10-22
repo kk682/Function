@@ -17,13 +17,15 @@ function palindromeYesOrNo(){
     let seriesNumbers = document.querySelector("#seriesNumbers").value;
     let x = seriesNumbers.length;
     for (let i = 0; i < x/2; i++) {
-    if (seriesNumbers.charAt(i) === seriesNumbers.charAt(x - 1 - i)){
-        document.querySelector("#seriesNumbersResult").innerText = seriesNumbers + " is palindrome";
-    }else {
+    if (seriesNumbers.charAt(i) !== seriesNumbers.charAt(x-1-i)){
         document.querySelector("#seriesNumbersResult").innerText = seriesNumbers + " is not palindrome";
+        document.querySelector("#seriesNumbersResult").style.color = "Red";
+        return false;
+    } else{document.querySelector("#seriesNumbersResult").innerText = seriesNumbers + " is palindrome";
     }
-    document.querySelector("#seriesNumbersResult").style.color = "Red";
-}
+    }
+        document.querySelector("#seriesNumbersResult").style.color = "Red";
+        return true;
 }
 
 //Subtotal of the Bill
